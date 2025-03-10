@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fi">
+<meta charset="UTF-8">
+
+<head>
+    <title>Feedback form</title>
+</head>
+
+<body>
+    <h1>Feedback form</h1>
+    <form action="tokatehtava.php" method="post">
+        <fieldset style="width: 50%;"> <!-- Määrää koko taulukon kokoa-->
+
+            <legend>Contact information:</legend> <!-- Tää tekee sen että tulee laatikko ympärille -->
+            <table> <!-- Määrää taulukon sisällä olevaa kokoa-->
+                <tr>
+                    <td>
+                        <label for="First name">First name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="First name" name="First name" required> Preferred contact method
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Last name">Last name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="Last name" name="Last name" required> <input type="checkbox"> Email
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email: </label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email" required> <input type="checkbox"> Telephone
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Telephone">Telephone:</label>
+                    </td>
+                    <td>
+                        <input type="tel" id="Telephone" name="Telephone" required>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+        </fieldset>
+        <br>
+        <fieldset style="width: 50%;">
+            <legend>Feedback:</legend>
+            <table>
+                <tr>
+                    <td><label for="Message subject:">Message subject:</label> <input type="text" id="Message subject:"
+                            name="Message subject:" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea id="Feedback" name="Feedback" rows="10" cols="40"></textarea></td>
+                    <!-- Määritetään tekstilaatikon koko -->
+                </tr>
+                <tr>
+                    <td><label for="attachment">Attach file:</label> <!-- Antaa liittää tiedostoja -->
+                        <input type="file" id="attachment" name="attachment">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Send"></td>
+                </tr>
+            </table>
+        </fieldset>
+        </radio>
+    </form>
+</body>
+
+</html>
