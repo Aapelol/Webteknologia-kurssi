@@ -16,9 +16,11 @@
                 <tr>
                     <td>
                         <label for="First name">First name:</label>
+                        <!-- label on teksti joka tulee ennen input kenttää -->
                     </td>
                     <td>
                         <input type="text" id="First name" name="First name" required> Preferred contact method
+                        <!-- input type="text" on tekstikenttä johon voi kirjoittaa -->
                     </td>
                 </tr>
                 <tr>
@@ -50,15 +52,16 @@
 
         </fieldset>
         <br>
-        <fieldset style="width: 50%;">
-            <legend>Feedback:</legend>
+        <fieldset style="width: 50%;"> <!-- Määrää taulukon sisällä olevaa kokoa-->
+            <legend>Feedback:</legend> <!-- Tää tekee sen että tulee laatikko ympärille -->
             <table>
                 <tr>
                     <td><label for="Message subject:">Message subject:</label> <input type="text" id="Message subject:"
-                            name="Message subject:" required></td>
+                            name="Message subject:" required></td> <!-- required tarkoittaa että se on pakollinen -->
                 </tr>
                 <tr>
                     <td colspan="2"><textarea id="Feedback" name="Feedback" rows="10" cols="40"></textarea></td>
+                    <!-- colspan lisää laatikolle tilaa-->
                     <!-- Määritetään tekstilaatikon koko -->
                 </tr>
                 <tr>
@@ -67,11 +70,10 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><input type="submit" value="Send"></td>
+                    <td><input type="submit" value="Send"></td> <!-- submit on nappi joka lähettää tiedot -->
                 </tr>
             </table>
         </fieldset>
-        </radio>
     </form>
 </body>
 
