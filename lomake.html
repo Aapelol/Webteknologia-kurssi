@@ -1,76 +1,90 @@
 <!DOCTYPE html>
-<html lang="fi">
-<meta charset="UTF-8">
+<html lang="fi"> <!-- Specifies the language of the document as Finnish -->
+<meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
 
 <head>
-    <title>Feedback form</title>
+    <title>Feedback form</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="tyylit/tyylit.css"> <!-- Link to the external CSS file for styling -->
 </head>
 
 <body>
-    <h1>Feedback form</h1>
-    <form action="tokatehtava.php" method="post">
-        <fieldset style="width: 50%;"> <!-- Määrää koko taulukon kokoa-->
 
-            <legend>Contact information:</legend> <!-- Tää tekee sen että tulee laatikko ympärille -->
-            <table> <!-- Määrää taulukon sisällä olevaa kokoa-->
+    <h1>Feedback form</h1> <!-- Main heading of the page -->
+    <form action="tokatehtava.php" method="post"> <!-- Form that sends data to 'tokatehtava.php' using POST method -->
+        <fieldset style="width: 50%;"> <!-- Fieldset to group related elements, with a specified width -->
+            <legend>Contact information:</legend> <!-- Caption for the fieldset -->
+            <table> <!-- Table to organize form elements -->
                 <tr>
                     <td>
-                        <label for="First name">First name:</label>
-                        <!-- label on teksti joka tulee ennen input kenttää -->
+                        <label for="First name">First name:</label> <!-- Label for the first name input field -->
                     </td>
                     <td>
-                        <input type="text" id="First name" name="First name" required> Preferred contact method
-                        <!-- input type="text" on tekstikenttä johon voi kirjoittaa -->
+                        <input type="text" id="First name" name="First name" required>
+                        <!-- Text input for first name, required field -->
+                        Preferred contact method <!-- Text indicating preferred contact method -->
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="Last name">Last name:</label>
+                        <label for="Last name">Last name:</label> <!-- Label for the last name input field -->
                     </td>
                     <td>
-                        <input type="text" id="Last name" name="Last name" required> <input type="checkbox"> Email
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="email">Email: </label>
-                    </td>
-                    <td>
-                        <input type="email" id="email" name="email" required> <input type="checkbox"> Telephone
+                        <input type="text" id="Last name" name="Last name" required>
+                        <!-- Text input for last name, required field -->
+                        <input type="checkbox"> Email <!-- Checkbox for email contact method -->
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="Telephone">Telephone:</label>
+                        <label for="email">Email: </label> <!-- Label for the email input field -->
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email" required> <!-- Email input field, required field -->
+                        <input type="checkbox"> Telephone <!-- Checkbox for telephone contact method -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Telephone">Telephone:</label> <!-- Label for the telephone input field -->
                     </td>
                     <td>
                         <input type="tel" id="Telephone" name="Telephone" required>
+                        <!-- Telephone input field, required field -->
                     </td>
                 </tr>
             </table>
-            <br>
+            <br> <!-- Line break for spacing -->
 
         </fieldset>
-        <br>
-        <fieldset style="width: 50%;"> <!-- Määrää taulukon sisällä olevaa kokoa-->
-            <legend>Feedback:</legend> <!-- Tää tekee sen että tulee laatikko ympärille -->
+        <br> <!-- Line break for spacing -->
+        <fieldset style="width: 50%;"> <!-- Fieldset to group related elements, with a specified width -->
+            <legend>Feedback:</legend> <!-- Caption for the fieldset -->
             <table>
                 <tr>
-                    <td><label for="Message subject:">Message subject:</label> <input type="text" id="Message subject:"
-                            name="Message subject:" required></td> <!-- required tarkoittaa että se on pakollinen -->
-                </tr>
-                <tr>
-                    <td colspan="2"><textarea id="Feedback" name="Feedback" rows="10" cols="40"></textarea></td>
-                    <!-- colspan lisää laatikolle tilaa-->
-                    <!-- Määritetään tekstilaatikon koko -->
-                </tr>
-                <tr>
-                    <td><label for="attachment">Attach file:</label> <!-- Antaa liittää tiedostoja -->
-                        <input type="file" id="attachment" name="attachment">
+                    <td>
+                        <label for="Message subject:">Message subject:</label>
+                        <!-- Label for the message subject input field -->
+                        <input type="text" id="Message subject:" name="Message subject:" required>
+                        <!-- Text input for message subject, required field -->
                     </td>
                 </tr>
                 <tr>
-                    <td><input type="submit" value="Send"></td> <!-- submit on nappi joka lähettää tiedot -->
+                    <td colspan="2"></td>
+                    <textarea id="Feedback" name="Feedback" rows="10" cols="40"></textarea>
+                    <!-- Textarea for feedback message, with specified rows and columns -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="attachment">Attach file:</label> <!-- Label for the file attachment input field -->
+                        <input type="file" id="attachment" name="attachment">
+                        <!-- File input field for attaching files -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Send"> <!-- Submit button to send the form data -->
+                    </td>
                 </tr>
             </table>
         </fieldset>

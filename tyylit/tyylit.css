@@ -1,7 +1,8 @@
 body {
-    background-color: lightblue;
+    background-color: rgb(177, 241, 241);
     width: 60%;
     margin: auto;
+    font-family: Arial, Arial, Helvetica, sans-serif;
 }
 
 .content {
@@ -11,10 +12,70 @@ body {
 }
 
 th,
-td {
+td,
+table {
     border: 1px solid black;
+}
+
+th {
+    font-size: large;
+    font-weight: 700;
+    text-align: left;
+    padding: 5px;
+}
+
+td {
+    font-size: medium;
+    font-weight: 400;
+    padding: 5px;
+    margin: 5px;
 }
 
 img {
     height: 200px;
+}
+
+p {
+    font-size: medium;
+    line-height: 1;
+    text-indent: 20px;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    background-color: rgb(235, 223, 192);
+    border-color: rgb(0, 0, 0);
+    border-width: 5px;
+    border-radius: 29px;
+    border-style: double;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+input[type="button"],
+input[type="file"] {
+    background-color: rgb(235, 223, 192);
+    border-color: rgb(0, 0, 0);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }

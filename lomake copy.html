@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fi"> <!-- Specifies the language of the document as Finnish -->
+<meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
+
+<head>
+    <title>Feedback form</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="tyylit/tyylit.css"> <!-- Link to the external CSS file -->
+</head>
+
+<body>
+
+    <h1>Feedback form</h1> <!-- Main heading of the form -->
+    <form action="tokatehtava.php" method="post"> <!-- Form submission details -->
+        <fieldset style="width: 70%;"> <!-- Fieldset to group related elements and set width -->
+            <legend>Contact information:</legend> <!-- Legend for the fieldset -->
+
+            <div class="container">
+                <div class="input-container">
+                    <h3>Nimi</h3> <!-- Subheading for name section -->
+                </div>
+
+                <div class="input-container">
+                    <label for="First name">First name:</label> <!-- Label for first name input -->
+                    <input type="text" id="First name" name="First name" required> <!-- Input for first name -->
+                </div>
+
+                <div class="input-container">
+                    <label for="Last name">Last name:</label> <!-- Label for last name input -->
+                    <input type="text" id="Last name" name="Last name" required> <!-- Input for last name -->
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="input-container">
+                    <h3>Yhteystiedot</h3> <!-- Subheading for contact information section -->
+                </div>
+
+                <div class="input-container">
+                    <label for="email">Email: </label> <!-- Label for email input -->
+                    <input type="email" id="email" name="email" required> <!-- Input for email -->
+                </div>
+
+                <div class="input-container">
+                    <label for="tel">Telephone: </label> <!-- Label for telephone input -->
+                    <input type="tel" id="Telephone" name="Telephone" required> <!-- Input for telephone -->
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="input-container">
+                    <h3>Valitse yhteydenottotapa</h3> <!-- Subheading for contact method section -->
+                </div>
+
+                <div class="input-container">
+                    <label for="Email">Email</label> <!-- Label for email checkbox -->
+                    <input type="checkbox"> <!-- Checkbox for email contact method -->
+                </div>
+
+                <div class="input-container">
+                    <label for="Telephone">Telephone</label> <!-- Label for telephone checkbox -->
+                    <input type="checkbox"> <!-- Checkbox for telephone contact method -->
+                </div>
+            </div>
+        </fieldset>
+
+        <br> <!-- Line break -->
+
+        <fieldset style="width: 70%;"> <!-- Fieldset to group related elements and set width -->
+            <legend>Feedback:</legend> <!-- Legend for the fieldset -->
+
+            <div class="container">
+                <div class="input-container">
+                    <h3>Palautteesi</h3> <!-- Subheading for feedback section -->
+                </div>
+
+                <div class="input-container" style="justify-content: flex-start;">
+                    <label for="Message subject:">Message subject:</label> <!-- Label for message subject input -->
+                    <input type="text" id="Message subject:" name="Message subject:" required> <!-- Input for message subject -->
+                </div>
+
+                <div class="input-container">
+                    <textarea id="Feedback" name="Feedback" rows="10" cols="40"></textarea> <!-- Textarea for feedback -->
+                </div>
+
+                <div class="container">
+                    <div class="input-container">
+                        <label for="attachment">Attach file:</label> <!-- Label for file attachment input -->
+                        <input type="file" id="attachment" name="attachment"> <!-- Input for file attachment -->
+                    </div>
+
+                    <div class="input-container">
+                        <input type="submit" value="Send"> <!-- Submit button to send the form -->
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
