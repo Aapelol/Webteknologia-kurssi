@@ -3,51 +3,74 @@
 
 <head>
     <title>Grid esimerkki</title> <!-- Title of the webpage -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <meta charset="utf-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive design settings -->
+    <title>Bootstrap demo</title> <!-- Title of the webpage (duplicate) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
     <link type="text/css" rel="stylesheet" href="tyylit/grid.css"> <!-- Link to the external CSS file -->
 </head>
 
 <body>
-    <nav class="navbar fixed-top bg-primary"> <!-- Navigation bar -->
+    <nav class="navbar fixed-top bg-primary"> <!-- Navbar sillee et pysyy ylhäällä, jos sivustoa selaa alaspäin -->
         <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1">Yläpalkki (Nav) esimerkki</span>
-            <form class="d-flex" role="search">
+            <span class="navbar-brand mb-0 h1 mx-auto">Yläpalkki esimerkki (Navigointipalkki fixattu pysymään
+                ylhäällä)</span>
+            <!-- Navbar brand -->
+            <form class="d-flex" role="search"> <!-- Search form -->
                 <input class="form-control me-2" type="search" placeholder="Hae" aria-label="Search">
+                <!-- Search input -->
                 <button class="btn btn-outline-success bg-white" type="submit">Hae</button>
+                <!-- Haku nappi valkealla taustalla -->
             </form>
         </div>
     </nav>
     <div class="grid-container"> <!-- Container for the grid layout -->
 
         <div class="sidebar"> <!-- Sidebar section -->
-            <h4>Lista</h4> <!-- Sidebar heading -->
-            <ul class="list-group">
+            <h4>Lista</h4> <!-- Sidebar otsikko -->
+            <ul class="list-group"> <!-- List group -->
                 <li class="list-group-item"><a href="https://lab.fi" data-bs-toggle="tooltip" data-bs-title=LAB>LAB</a>
-                </li>
+                </li> <!-- Linkki, jossa on hover tooltippi linkin päällä -->
                 <li class="list-group-item"><a href="https://lut.fi" data-bs-toggle="tooltip" data-bs-title=LUT>LUT</a>
                 </li>
                 <li class="list-group-item"><a href="https://www.geoguessr.com" data-bs-toggle="tooltip"
-                        data-bs-title=GeoGuessr>GeoGuessr</a>
-                </li>
+                        data-bs-title=GeoGuessr>GeoGuessr</a></li>
                 <li class="list-group-item"><a href="https://www.youtube.com" data-bs-toggle="tooltip"
-                        data-bs-title=Youtube>Youtube</a>
-                </li>
+                        data-bs-title=Youtube>Youtube</a></li>
             </ul>
         </div>
 
         <div class="main container"> <!-- Main content section -->
-            <div class="row">
+            <div class="row"> <!-- Row for cards -->
+
                 <div class="card text-center col-6 col-md-4 col-lg-3">
-                    <div class="card-header">
-                        Ensimmäinen kortti
-                    </div>
+                    <div class="card-header">Ensimmäinen kortti</div> <!-- Kortin ylin teksti -->
                     <div class="card-body">
-                        <h5 class="card-title">Kortin otsikko</h5>
-                        <p class="card-text">Kortin sisältö</p>
+                        <h5 class="card-title">Karhu skeittaa</h5> <!-- Kortin otsikko nimi -->
+                        <img src="C:\Users\aapel\Pictures\Screenshots\Näyttökuva 2024-09-05 131340.png"
+                            class="card-img-top" alt="Card image"> <!-- Kortin kuva -->
+                        <p class="card-text">Kuva ei ole todellakaan AI generoitu. Luonnossa karhut eivät tietenkään
+                            skeittaa, mutta koulutettuna ne pystyvät oppimaan yksinkertaisia temppuja, vaikka eivät ehkä
+                            Tony Hawkin tasolle pääsekään!</p> <!-- Kortin kuvaus/sisältö -->
+                    </div>
+                    <div class="card-footer text-muted">
+                        <a href="#" class="btn btn-primary float-start bg-primary">Jatka</a>
+                        <!-- Jatka nappi start (alkuun) asetuksella ja sinisellä värillä -->
+                        <a href="#" class="btn btn-secondary float-end bg-danger">Peruuta</a>
+                        <!-- Peruuta nappi end (perälle) asetuksella ja punaisella värillä -->
+                    </div>
+                </div>
+                <!-- Alhalla olevat kortit ovat kopioita ylemmästä -->
+
+                <div class="card text-center col-6 col-md-4 col-lg-3">
+                    <div class="card-header">Toinen kortti</div>
+                    <div class="card-body">
+                        <h5 class="card-title">K***** mul on kuuma</h5>
+                        <img src="C:\Users\aapel\Pictures\Screenshots\Näyttökuva 2024-09-05 125619.png"
+                            class="card-img-top" alt="Card image">
+                        <p class="card-text">Voi pojat ku kesä tulee ja on kuuma</p>
                     </div>
                     <div class="card-footer text-muted">
                         <a href="#" class="btn btn-primary float-start bg-primary">Jatka</a>
@@ -56,12 +79,12 @@
                 </div>
 
                 <div class="card text-center col-6 col-md-4 col-lg-3">
-                    <div class="card-header">
-                        Toinen kortti
-                    </div>
+                    <div class="card-header">Kolmas kortti</div>
                     <div class="card-body">
-                        <h5 class="card-title">Kortin otsikko</h5>
-                        <p class="card-text">Kortin sisältö</p>
+                        <h5 class="card-title">Hamsteri vaihtuu douppii</h5>
+                        <img src="C:\Users\aapel\Pictures\Screenshots\Näyttökuva 2024-12-11 133248.png"
+                            class="card-img-top" alt="Card image">
+                        <p class="card-text">Joo hei yksin kaupoille sit</p>
                     </div>
                     <div class="card-footer text-muted">
                         <a href="#" class="btn btn-primary float-start bg-primary">Jatka</a>
@@ -70,12 +93,12 @@
                 </div>
 
                 <div class="card text-center col-6 col-md-4 col-lg-3">
-                    <div class="card-header">
-                        Kolmas kortti
-                    </div>
+                    <div class="card-header">Neljäs kortti</div>
                     <div class="card-body">
-                        <h5 class="card-title">Kortin otsikko</h5>
-                        <p class="card-text">Kortin sisältö</p>
+                        <h5 class="card-title">Hymyilyttää</h5>
+                        <img src="C:\Users\aapel\Pictures\Screenshots\Näyttökuva 2024-12-05 133456.png"
+                            class="card-img-top" alt="Card image">
+                        <p class="card-text">Hymyilyttää</p>
                     </div>
                     <div class="card-footer text-muted">
                         <a href="#" class="btn btn-primary float-start bg-primary">Jatka</a>
@@ -84,12 +107,12 @@
                 </div>
 
                 <div class="card text-center col-6 col-md-4 col-lg-3">
-                    <div class="card-header">
-                        Neljäs kortti
-                    </div>
+                    <div class="card-header">Viides kortti</div>
                     <div class="card-body">
-                        <h5 class="card-title">Kortin otsikko</h5>
-                        <p class="card-text">Kortin sisältö</p>
+                        <h5 class="card-title">Ugly dog</h5>
+                        <img src="C:\Users\aapel\Pictures\Screenshots\Näyttökuva 2025-02-12 122356.png"
+                            class="card-img-top" alt="Card image">
+                        <p class="card-text">Melkone komistus</p>
                     </div>
                     <div class="card-footer text-muted">
                         <a href="#" class="btn btn-primary float-start bg-primary">Jatka</a>
@@ -98,12 +121,11 @@
                 </div>
 
                 <div class="card text-center col-6 col-md-4 col-lg-3">
-                    <div class="card-header">
-                        Viides kortti
-                    </div>
+                    <div class="card-header">Kuudes kortti</div>
+                    <h5 class="card-title">Arvaa mitä</h5>
+                    <img src="C:\Users\aapel\Pictures\eikiinosta.jpg" class="card-img-top" alt="Card image">
                     <div class="card-body">
-                        <h5 class="card-title">Kortin otsikko</h5>
-                        <p class="card-text">Kortin sisältö</p>
+                        <p class="card-text">Muikkusta ei kiinnosta</p>
                     </div>
                     <div class="card-footer text-muted">
                         <a href="#" class="btn btn-primary float-start bg-primary">Jatka</a>
@@ -112,12 +134,11 @@
                 </div>
 
                 <div class="card text-center col-6 col-md-4 col-lg-3">
-                    <div class="card-header">
-                        Kuudes kortti
-                    </div>
+                    <div class="card-header">Seitsemäs kortti</div>
+                    <h5 class="card-title">Teemu uhkailee</h5>
+                    <img src="C:\Users\aapel\Pictures\joelkiusaa.png" class="card-img-top" alt="Card image">
                     <div class="card-body">
-                        <h5 class="card-title">Kortin otsikko</h5>
-                        <p class="card-text">Kortin sisältö</p>
+                        <p class="card-text">Otin tietoisen riskin ja tulin kouluun, vaikka Teemu kovasti uhkaili</p>
                     </div>
                     <div class="card-footer text-muted">
                         <a href="#" class="btn btn-primary float-start bg-primary">Jatka</a>
@@ -126,46 +147,32 @@
                 </div>
 
                 <div class="card text-center col-6 col-md-4 col-lg-3">
-                    <div class="card-header">
-                        Seitsemäs kortti
-                    </div>
+                    <div class="card-header">Kahdeksas kortti</div>
                     <div class="card-body">
-                        <h5 class="card-title">Kortin otsikko</h5>
-                        <p class="card-text">Kortin sisältö</p>
+                        <h5 class="card-title">Perus pelipäivä</h5>
+                        <img src="C:\Users\aapel\Pictures\Screenshots\Näyttökuva 2024-09-05 131203.png"
+                            class="card-img-top" alt="Card image">
+                        <p class="card-text">Koko päivän taas odotin et pääsee pelaa</p>
                     </div>
                     <div class="card-footer text-muted">
                         <a href="#" class="btn btn-primary float-start bg-primary">Jatka</a>
                         <a href="#" class="btn btn-secondary float-end bg-danger">Peruuta</a>
                     </div>
                 </div>
-
-                <div class="card text-center col-6 col-md-4 col-lg-3">
-                    <div class="card-header">
-                        Kahdeksas kortti
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Kortin otsikko</h5>
-                        <p class="card-text">Kortin sisältö</p>
-                    </div>
-                    <div class="card-footer text-muted">
-                        <a href="#" class="btn btn-primary float-start bg-primary">Jatka</a>
-                        <a href="#" class="btn btn-secondary float-end bg-danger">Peruuta</a>
-                    </div>
-                </div>
-
             </div>
-
         </div>
 
-        <div class="footer"> <!-- Footer section -->
-            <h3>Webteknologia LLPRIT24s</h3> <!-- Footer content -->
+        <div class="footer"> <!-- Sivuston alapalkki -->
+            <h3>Webteknologia LLPRIT24s</h3> <!-- Alapalkin sisältö -->
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script>const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))</script>
+        crossorigin="anonymous"></script> <!-- Bootstrap JS -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl)) <!-- Initialize tooltips -->
+    </script> <!-- Scripti sille et tulee se hover teksti jos laittaa hiiren linkin ylle -->
 </body>
 
 </html>
