@@ -24,6 +24,7 @@
 .sidebar {
     grid-area: sidebar;
     background-color: beige;
+    padding: 10px;
 }
 
 .main {
