@@ -1,0 +1,10 @@
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 50px;
+    grid-template-columns: 100px auto;
+    grid-template-areas:
+        "sidebar main"
+        "footer footer";
+    height: 100vh;
+    margin-top: 100px;
+}
