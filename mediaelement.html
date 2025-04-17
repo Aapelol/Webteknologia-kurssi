@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+<title>🤯 TÄMÄ EI OLE NORMAALIA 🤯</title>
 
 <head>
     <meta charset="utf-8">
@@ -7,61 +8,107 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link type="text/css" rel="stylesheet" href="tyylit/mediaelement.css"> <!-- Link to the external CSS file for styling -->
+    <link type="text/css" rel="stylesheet" href="tyylit/mediaelement.css">
+    <!-- Link to the external CSS file for styling -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="tyylit/taikakoodi.css">
 </head>
 
 <body onload="init()">
-    <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
-        <!-- Navi palkki laitettu fixed top ja .css tuo 50px marginin jottei navbar peitä otsikkoa-->
-        <div class="container-fluid"> <!-- Container for the navbar -->
-            <a class="navbar-brand" href="#">Navbar</a> <!-- Navbar brand name -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- Button for toggling the navbar on smaller screens -->
-                <span class="navbar-toggler-icon"></span> <!-- Toggler icon for mobile view -->
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#hello">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#karuselli">Cars</a> <!-- Linkki karuselliin -->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#kortti">Kortti</a> <!-- Linkki korttiin -->
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <h3>Kuvia kissoista ole hyvä!</h3>
-    
     <div id="kortti" class="my-5 d-flex justify-content-evenly">
         <!-- d-flex justify-content-evenly tekee niin että kortit on tasaisesti jaettu -->
-        <div class="card" style="width: 25rem;"> <!-- Kortin leveys 25rem -->
-            <img id="carousel-image" class="card-img-top" style="height: 400px; object-fit: fill;">
+        <div class="card" style="width: fit-content;">
+            <img id="carousel-image" class="card-img-top" style="height: 500px; width: 800px; justify-content: center;">
             <div class="card-body">
                 <h5 class="card-title" id="carousel-title"></h5>
             </div>
             <div class="btn-group" role="group" aria-label="Basic outlined example">
-                <button type="button" class="btn btn-outline-primary" onclick="prevImage()">
+                <button type="button" class="btn btn-outline-primary" onclick="prevImage();doCoolEffects()">
                     <i class="bi bi-arrow-left"></i>
                 </button>
 
-                <button type="button" class="btn btn-outline-primary"  onclick="pauseIcon()">
-                    <i class="bi bi-pause-btn"></i>
+                <button type="button" class="btn btn-outline-primary" onclick="playOrStop();doCoolEffects()">
+                    <i id="play-pause-icon" class="bi bi-play-fill"></i>
                 </button>
 
-                <button type="button" class="btn btn-outline-primary" onclick="nextImage()">
+                <button type="button" class="btn btn-outline-primary" onclick="nextImage();doCoolEffects()">
                     <i class="bi bi-arrow-right"></i>
                 </button>
             </div>
         </div>
     </div>
-    <script defer src="scripts/mediaelement.js"></script>
+</body>
+
+<body>
+
+    <h1>🤯 🤯 🤯</h1>
+
+    <div class="emoji-explosion">
+        😵‍💫 🤡 🦄 🐸 🛹 🔥 🧠 🍕 🌮 🧃 🐱‍👤 💥 🤖 🧀 🦖 💃 🛸 👾
+    </div>
+
+    <div class="ascii">
+        <pre>
+        |\_/|
+       ( o.o )  < "VOI POJAT"
+        > ^ < 
+  </pre>
+    </div>
+
+    <div class="random-text">💬 *Tämä sivu ei tee mitään järkevää. Juuri siksi se on täydellinen.*</div>
+
+    <div class="marquee-zone">
+        <marquee behavior="scroll" direction="left">💣 KAIKKI ON VILKKUVAA JA HYÖDYTÖNTÄ 💣</marquee>
+        <marquee behavior="alternate" scrollamount="30">🛹 Tämä on marquee helvetti 🛹</marquee>
+        <marquee behavior="scroll" direction="right">🤪 Klikkaa nappia... tai älä. Elämä on valintoja. 🤪</marquee>
+    </div>
+
+    <button class="insanity-button" onclick="causeChaos()">KAAOS NAPPI</button>
+
+</body>
+
+<body>
+
+    <h1 class="crazy">🤯 TÄMÄ EI OLE NORMAALIA™ 🤯</h1>
+
+    <div class="emoji-storm">
+        🐸🔥🦄💃🧠🍕🌈🚀🤡🛹😵‍💫
+    </div>
+
+    <p><strong>VAROITUS:</strong> Tämän sivun selaaminen voi aiheuttaa tilapäistä tyhmyyttä.</p>
+
+    <button onclick="alert('Hahaa! Et saa tästä mitään irti! 😂')">
+        Klikkaa jos uskallat
+    </button>
+
+    <div class="ascii">
+        <pre>
+       /\_/\  
+      ( o.o ) < MEOW
+       > ^ <  
+  
+     BOSS ASCII-KISSA
+  </pre>
+    </div>
+
+    <marquee scrollamount="15" behavior="alternate" direction="right" style="font-size: 24px;">
+        🔊 TÄMÄ ON TÄYSIN TARPEETON MARQUEE-EFEKTI 🔊
+    </marquee>
+
+</body>
+<script defer src="scripts/taikakoodi.js"></script>
+<script defer src="scripts/mediaelement.js"></script>
+
+<script>
+    function causeChaos() {
+        alert("🤡 Nyt se meni överiksi!");
+        document.body.style.transform = "rotate(180deg)";
+        setTimeout(() => {
+            document.body.style.transform = "rotate(0deg)";
+        }, 5000);
+    }
+</script>
+
 </body>
 
 </html>

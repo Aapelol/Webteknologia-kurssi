@@ -1,19 +1,111 @@
 .card-body {
     background-color: rgb(194, 253, 255);
+    background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMW01OGlvOG42Z3B5N2trNGV1bXV0eXE0eXhhY29sdXR0ejNleHNrZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TpsuCxwsNH8gatbpR5/giphy.gif');
 }
 
 
 body {
-    background-color: rgb(251, 255, 195);
-    width: 60%;
-    margin: auto;
-    font-family: Arial, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGFtYmJkNnozcWdpeXl1endzcDk5bTMybzYyNTBkY2lhYWVpczYxZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3fQ9icfExRfiePrq/giphy.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    animation: hueRotate 10s linear infinite;
+    backdrop-filter: brightness(1) blur(5px);
+}
+
+@keyframes hueRotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+h1 {
+    font-size: 10px;
+    margin-top: 10px;
+    animation: glow 1.5s ease-in-out infinite alternate, shimmer 3s infinite linear;
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff0, 0 0 30px #0ff;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff0, 0 0 30px #0ff;
+    }
+
+    to {
+        text-shadow: 0 0 20px #ff00ff, 0 0 40px #0f0, 0 0 50px #00f;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.container {
+    margin-top: 100px;
+    font-size: 28px;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    display: inline-block;
+    animation: float 4s ease-in-out infinite;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.weird {
+    font-size: 90px;
+    animation: spin 8s linear infinite;
+    display: inline-block;
+    color: #fff;
+    text-shadow: 0 0 10px #ff0, 0 0 20px #f0f, 0 0 30px #0ff;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 h5 {
     text-align: center;
     font-size: 35px;
     color: rgb(0, 0, 0);
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
